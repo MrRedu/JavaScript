@@ -1,24 +1,3 @@
-# ¿Qué es un Array?
-
-Colección o **agrupación de elementos de cualquier tipo en una misma variable,** cada uno de ellos ubicado con referencia a la posición que ocupa dentro del mismo. <br>
-
-### Creación:
-
-```js
-const carros = ["🚗", "🚓", "🚕", "🚐", "🚛"];
-```
-
-### Estructura:
-
-Los elementos del Array, están posicionados por _index/índice,_ (a esto se le llama, _Indexación basada en cero/Indexación desde cero/Zero-based indexing_) esto quiere decir que el primer elemento, tiene la posición [0].
-
-```js
-carros[0] // '🚗'
-carros[1] // '🚓'
-...
-carros[4] // '🚛'
-```
-
 ## Métodos funcionales de los Array
 
 Irónicamente comenzaremos la lista de métodos funcionales, con una propiedad _(no es un método)_. <br>
