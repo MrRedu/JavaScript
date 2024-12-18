@@ -6,14 +6,8 @@
   </summary>
 
 <ul>
-  <li><a href="#-¿qué-es-un-array-?">Descripción</a></li>
+  <li><a href="#¿qué-es-un-array?">Descripción</a></li>
   <li><a href="./metodos">Métodos</a></li>
-  <!-- <li>
-    Título para segundo nivel
-    <ul>
-      <li><a href="">Segundo nivel</a></li>
-    </ul>
-  </li> -->
 </ul>
 </details>
 
