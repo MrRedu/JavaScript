@@ -1,4 +1,4 @@
-## Métodos funcionales de los Array
+# Métodos funcionales de los Array
 
 Irónicamente comenzaremos la lista de métodos funcionales, con una propiedad _(no es un método)_. <br>
 
@@ -9,21 +9,29 @@ const frutas = ["🍎", "🍈", "🍓", "🍇", "🍉"];
 frutas.length; // 5
 ```
 
-Método `.toString()`: Transforma todos los elementos del Array en una cadena de texto _(string)_, separándolos con una coma (,).
+### `.toString()`
+
+Transforma todos los elementos del Array en una cadena de texto _(string)_, separándolos con una coma (,).
 
 ```js
 const frutas = ["Manzana", "Melón", "Fresa", "Mora", "Sandía"];
 frutas.toString(); // 'Manzana,Melón,Fresa,Mora,Sandía'
 ```
 
-Método `.join()`: Transforma todos los elementos del Array en una cadena de texto, pero con la característica que podemos definir el caracter que divida los elementos en dicho string.
+### `.join()`
+
+Transforma todos los elementos del Array en una cadena de texto, pero con la característica que podemos definir el caracter que divida los elementos en dicho string.
 
 ```js
 const frutas = ["Manzana", "Melón", "Fresa", "Mora", "Sandía"];
 frutas.join(" + "); // 'Manzana + Melón + Fresa + Mora + Sandía'
 ```
 
-Método `.sort()`: Ordena el Array (de manera ascendente en casos muy sencillos). El orden no es necesariamente [estable](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability). El modo de ordenación por defecto responde a la posición del valor del string de acuerdo a su valor Unicode.
+### `.sort()`
+
+`[mutable]`
+
+Ordena el Array (de manera ascendente en casos muy sencillos). El orden no es necesariamente [estable](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability). El modo de ordenación por defecto responde a la posición del valor del string de acuerdo a su valor Unicode.
 
 ```js
 const letras = ["D", "H", "F", "G", "E", "B", "A", "C"];
@@ -33,14 +41,31 @@ letras.sort(); // ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 numeros.sort(); // [-5, 1, 159.5, 42, 428, 5, 98]
 ```
 
-Método `.reverse()`: Invierte el orden de un Array. _El primer elemento pasa a ser el último, el último pasa a ser el primero._
+Ordena los elementos del Array como si fueran cadenas de texto, lo que puede llevar a resultados inesperados al ordenar números. Para ordenar correctamente los números de menor a mayor, se debe proporcionar una función de comparación que reste los dos valores:
+
+```js
+numeros.sort((a, b) => a - b); // asc -> [-5, 1, 5, 42, 98, 159.5, 428]
+// Si a - b es negativo, a se coloca antes que b
+// Si es positivo, b se coloca antes que a
+// Si es 0, no se cambia el orden
+
+numeros.sort((a, b) => b - a); // des -> [428, 159.5, 98, 42, 5, 1, -5]
+// Si b - a es negativo, b se coloca antes que a
+// Si es positivo, a se coloca antes que b
+```
+
+### `.reverse()`
+
+Invierte el orden de un Array. _El primer elemento pasa a ser el último, el último pasa a ser el primero._
 
 ```js
 const arreglo = ["abc", 500, "QWE", false];
 arreglo.reverse(); // [false, 'QWE', 500, 'abc']
 ```
 
-Método `.concat()`: Permite juntar/concatenar dos Array.
+### `.concat()`
+
+Permite juntar/concatenar dos Array.
 
 ```js
 const frutas = ["Melón", "Manzana", "Sandía", "Piña"];
@@ -49,21 +74,27 @@ const fruits = ["🍈", "🍎", "🍉", "🍍"];
 frutas.concat(fruits); // ['Melón', 'Manzana', 'Sandía', 'Piña', '🍈', '🍎', '🍉', '🍍']
 ```
 
-Método `.push()`: Añade uno o más elementos al final del Array. Devolviendo la nueva longitud del Array.
+### `.push()`
+
+Añade uno o más elementos al final del Array. Devolviendo la nueva longitud del Array.
 
 ```js
 const colores = ["Amarillo", "Magenta", "Azul"];
 colores.push("Rosado", "Rojo"); // 5
 ```
 
-Método `.pop()`: Elimina el último elemento del Array. Devolviendo el elemento que eliminó.
+### `.pop()`
+
+Elimina el último elemento del Array. Devolviendo el elemento que eliminó.
 
 ```js
 const colores = ["Amarillo", "Magenta", "Azul"];
 colores.pop(); // Azul
 ```
 
-Método `.shift()`: Elimina el primer elemento del Array. Devolviendo el elemento que eliminó.
+### `.shift()`
+
+Elimina el primer elemento del Array. Devolviendo el elemento que eliminó.
 
 ```js
 const dias = [
@@ -78,14 +109,18 @@ const dias = [
 dias.shift(); // Lunes
 ```
 
-Método `.unshift()`: Agrega uno o más elementos al inicio del Array. Devolviendo la nueva longitud del Array.
+### `.unshift()`
+
+Agrega uno o más elementos al inicio del Array. Devolviendo la nueva longitud del Array.
 
 ```js
 const meses = ["Marzo", "Abril", "Mayo"];
 meses.unshift("Enero", "Febrero"); // 5
 ```
 
-Método `.splice()`: Cambia el contenido de un Array eliminando (o no) elementos existentes y/o agregando nuevos elementos.
+### `.splice()`
+
+Cambia el contenido de un Array eliminando (o no) elementos existentes y/o agregando nuevos elementos.
 **Caso #1:**
 
 ```js
