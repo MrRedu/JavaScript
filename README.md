@@ -23,7 +23,7 @@
 </ul>
 </details>
 
-<h2>Contribuyentes</h2>
+<h2>Colaboradores</h2>
 <div>
   <a href="https://github.com/MrRedu/JavaScript/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=MrRedu/JavaScript" />
