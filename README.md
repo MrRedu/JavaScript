@@ -2,7 +2,7 @@
 
 <details align="left">
   <summary>
-    <h3>Tabla de contenidos</h3>
+    <h2>Tabla de contenidos</h2>
   </summary>
 
 <ul>
@@ -22,3 +22,10 @@
   </li>
 </ul>
 </details>
+
+<h2>Contribuyentes</h2>
+<div>
+  <a href="https://github.com/MrRedu/JavaScript/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=MrRedu/JavaScript" />
+  </a> 
+</div>
