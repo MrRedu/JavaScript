@@ -39,3 +39,5 @@
 ## ¿Qué es la desestructuración?
 
 ## ¿Qué es el operador spread?
+El operador spread en JavaScript, representado por tres puntos (...), es una característica que permite expandir elementos de un iterable (como arrays, objetos o cadenas) en otros contextos, como literales de arrays, llamadas a funciones y objetos.
+
