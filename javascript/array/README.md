@@ -7,7 +7,7 @@
 
 <ul>
   <li><a href="#qué-es-un-array">Descripción</a></li>
-  <li><a href="./metodos">Métodos</a></li>
+  <li><a href="./methods">Métodos</a></li>
 </ul>
 </details>
 
