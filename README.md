@@ -13,7 +13,7 @@
       <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array">Arrays</a>
       <ul>
         <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array#qu%C3%A9-es-un-array">¿Qué es un Array?</a></li>
-        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array/metodos">Métodos</a></li>
+        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array/methods">Métodos</a></li>
       </ul>
     </li>
       <li>
