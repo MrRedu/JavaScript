@@ -23,6 +23,13 @@
         <li><a href="#">Métodos</a></li>
       </ul>
     </li>
+        <li>
+      <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console">Consola</a>
+      <ul>
+        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console#qu%C3%A9-es-la-consola">Descripción</a></li>
+        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console/methods">Métodos</a></li>
+      </ul>
+    </li>
   </ul>
 </details>
 
