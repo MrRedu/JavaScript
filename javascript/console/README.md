@@ -45,3 +45,24 @@
 Es una herramienta fundamental para la depuración y el desarrollo de aplicaciones. Proporciona acceso a la consola de depuración de los navegadores y permite a los desarrolladores mostrar mensajes y datos, facilitando así el análisis y la resolución de problemas en el código.
 
 El objeto console está disponible globalmente en cualquier entorno de ejecución de JavaScript, ya sea en un navegador o en un entorno como Node.js
+
+## Probando la consola
+Para abrir la consola, simplemente haz `clic derecho` en cualquier parte de la página y selecciona `Inspeccionar`, luego dirígete a la sección de **Consola**.
+
+![Imagen de consola vacía](https://github.com/user-attachments/assets/79fe8c7a-5bef-403b-b1da-5355dab40459)
+
+Una vez abierta, puedes probar escribiendo diferentes métodos del objeto `console`:
+```js
+console.log('Este es un mensaje normal');
+console.info('Información importante');
+console.warn('Advertencia: algo podría estar mal');
+console.error('Error: algo falló');
+```
+
+### Ejemplo de visualización
+![Ejemplo de métodos de la consola](https://github.com/user-attachments/assets/94bea0bf-6063-4efd-8a2b-2972092bf15f)
+
+> [Ver más](./methods) métodos del objeto `console`
+
+> [!NOTE]  
+> Ten en cuenta que el acceso a la consola puede variar según el navegador y su versión; sin embargo, los pasos generales son bastante similares.
