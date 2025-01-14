@@ -51,7 +51,11 @@ Para abrir la consola, simplemente haz `clic derecho` en cualquier parte de la p
 
 ![Imagen de consola vacía](https://github.com/user-attachments/assets/79fe8c7a-5bef-403b-b1da-5355dab40459)
 
-Una vez abierta, puedes probar escribiendo diferentes métodos del objeto `console`:
+> [!NOTE]  
+> Ten en cuenta que el acceso a la consola puede variar según el navegador y su versión; sin embargo, los pasos generales son bastante similares.
+
+### Ejemplos de uso
+Aquí se presentan algunos ejemplos prácticos de cómo utilizar los métodos del objeto `console`:
 ```js
 console.log('Este es un mensaje normal');
 console.info('Información importante');
@@ -59,10 +63,16 @@ console.warn('Advertencia: algo podría estar mal');
 console.error('Error: algo falló');
 ```
 
-### Ejemplo de visualización
+#### Visualización
 ![Ejemplo de métodos de la consola](https://github.com/user-attachments/assets/94bea0bf-6063-4efd-8a2b-2972092bf15f)
 
 > [Ver más](./methods) métodos del objeto `console`
 
-> [!NOTE]  
-> Ten en cuenta que el acceso a la consola puede variar según el navegador y su versión; sin embargo, los pasos generales son bastante similares.
+
+## Buenas prácticas
+- Uso Moderado: Es recomendable no saturar la consola con demasiados mensajes, ya que esto puede dificultar la identificación de información relevante1.
+- Mensajes Descriptivos: Utilizar mensajes claros y descriptivos ayuda a entender mejor el contexto de los datos mostrados. Por ejemplo, en lugar de usar `console.log(data)`, sería mejor usar `console.log('Datos recibidos:', data)`.
+- Eliminar en Producción: Es aconsejable eliminar o deshabilitar los mensajes de la consola en el código que se despliega en producción para evitar exponer información sensible y mejorar el rendimiento12.
+
+El objeto console es, por tanto, una herramienta poderosa que mejora significativamente la productividad del desarrollo al facilitar la depuración y el análisis del código.
+
