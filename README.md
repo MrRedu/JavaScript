@@ -9,6 +9,12 @@
     <h2>Tabla de contenidos</h2>
   </summary>
   <ul>
+     <li>
+         ¿Qué es JavaScript?
+      </li>
+     <li>
+        Tipos de datos
+     </li>
     <li>
       <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array">Arrays</a>
       <ul>
@@ -23,13 +29,24 @@
         <li><a href="#">Métodos</a></li>
       </ul>
     </li>
-        <li>
+   <li>
       <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console">Consola</a>
       <ul>
         <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console#qu%C3%A9-es-la-consola">¿Qué es la consola?</a></li>
         <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console/methods">Métodos</a></li>
       </ul>
     </li>
+      <li>
+         Dinámicas
+         <ul>
+      <li>
+         ¿Cuál es el resultado?
+      </li>
+      <li>
+         Preguntas técnicas
+      </li>
+         </ul>
+      </li>
   </ul>
 </details>
 
