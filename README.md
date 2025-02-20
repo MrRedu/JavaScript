@@ -13,7 +13,7 @@
          ¿Qué es JavaScript?
       </li>
      <li>
-        <a href="">Tipos de datos</a>
+        <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/data-types#tipos-de-datos-en-javascript">Tipos de datos</a>
         <ul>
           <li>
             <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/string">String</a>
