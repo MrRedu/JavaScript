@@ -13,22 +13,32 @@
          ¿Qué es JavaScript?
       </li>
      <li>
-        Tipos de datos
+        <a href="">Tipos de datos</a>
+        <ul>
+          <li>
+            <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/string">String</a>
+            <ul>
+              <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/string#qu%C3%A9-es-un-string-cadena-de-texto">¿Qué es un String?</a></li>
+              <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/string/methods">Métodos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array">Arrays</a>
+            <ul>
+              <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array#qu%C3%A9-es-un-array">¿Qué es un Array?</a></li>
+              <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array/methods">Métodos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Objectos</a>
+            <ul>
+              <li><a href="#">Descripción</a></li>
+              <li><a href="#">Métodos</a></li>
+            </ul>
+           </li>
+        </ul>
      </li>
-    <li>
-      <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array">Arrays</a>
-      <ul>
-        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array#qu%C3%A9-es-un-array">¿Qué es un Array?</a></li>
-        <li><a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/array/methods">Métodos</a></li>
-      </ul>
-    </li>
-      <li>
-      <a href="#">Objectos</a>
-      <ul>
-        <li><a href="#">Descripción</a></li>
-        <li><a href="#">Métodos</a></li>
-      </ul>
-    </li>
+
    <li>
       <a href="https://github.com/MrRedu/JavaScript/tree/main/javascript/console">Consola</a>
       <ul>
