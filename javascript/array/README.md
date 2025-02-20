@@ -1,6 +1,6 @@
 # Array `[]`
 
-<details align="left">
+<details align="left" open>
   <summary>
     <h3>Tabla de contenidos</h3>
   </summary>
