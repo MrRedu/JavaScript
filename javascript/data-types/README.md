@@ -1,4 +1,4 @@
-# Tipos de datos en JavaScript `[]`
+# Tipos de datos en JavaScript
 
 ```js
 typeof ''                // string
