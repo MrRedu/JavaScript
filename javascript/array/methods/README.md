@@ -5,7 +5,7 @@ Irónicamente comenzaremos la lista de métodos funcionales, con una propiedad _
 Esta propiedad es `.length`: Nos muestra la cantidad _(longitud del Array)_ de elementos que posee dicho Array.
 
 ```js
-const frutas = ["🍎", "🍈", "🍓", "🍇", "🍉"];
+const frutas = ['🍎', '🍈', '🍓', '🍇', '🍉'];
 frutas.length; // 5
 ```
 
@@ -14,7 +14,7 @@ frutas.length; // 5
 Transforma todos los elementos del Array en una cadena de texto _(string)_, separándolos con una coma (,).
 
 ```js
-const frutas = ["Manzana", "Melón", "Fresa", "Mora", "Sandía"];
+const frutas = ['Manzana', 'Melón', 'Fresa', 'Mora', 'Sandía'];
 frutas.toString(); // 'Manzana,Melón,Fresa,Mora,Sandía'
 ```
 
@@ -23,8 +23,8 @@ frutas.toString(); // 'Manzana,Melón,Fresa,Mora,Sandía'
 Transforma todos los elementos del Array en una cadena de texto, pero con la característica que podemos definir el caracter que divida los elementos en dicho string.
 
 ```js
-const frutas = ["Manzana", "Melón", "Fresa", "Mora", "Sandía"];
-frutas.join(" + "); // 'Manzana + Melón + Fresa + Mora + Sandía'
+const frutas = ['Manzana', 'Melón', 'Fresa', 'Mora', 'Sandía'];
+frutas.join(' + '); // 'Manzana + Melón + Fresa + Mora + Sandía'
 ```
 
 ### `.sort()`
@@ -34,7 +34,7 @@ frutas.join(" + "); // 'Manzana + Melón + Fresa + Mora + Sandía'
 Ordena el Array (de manera ascendente en casos muy sencillos). El orden no es necesariamente [estable](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability). El modo de ordenación por defecto responde a la posición del valor del string de acuerdo a su valor Unicode.
 
 ```js
-const letras = ["D", "H", "F", "G", "E", "B", "A", "C"];
+const letras = ['D', 'H', 'F', 'G', 'E', 'B', 'A', 'C'];
 const numeros = [5, 428, 1, -5, 159.5, 42, 98];
 
 letras.sort(); // ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
@@ -59,7 +59,7 @@ numeros.sort((a, b) => b - a); // des -> [428, 159.5, 98, 42, 5, 1, -5]
 Invierte el orden de un Array. _El primer elemento pasa a ser el último, el último pasa a ser el primero._
 
 ```js
-const arreglo = ["abc", 500, "QWE", false];
+const arreglo = ['abc', 500, 'QWE', false];
 arreglo.reverse(); // [false, 'QWE', 500, 'abc']
 ```
 
@@ -68,8 +68,8 @@ arreglo.reverse(); // [false, 'QWE', 500, 'abc']
 Permite juntar/concatenar dos Array.
 
 ```js
-const frutas = ["Melón", "Manzana", "Sandía", "Piña"];
-const fruits = ["🍈", "🍎", "🍉", "🍍"];
+const frutas = ['Melón', 'Manzana', 'Sandía', 'Piña'];
+const fruits = ['🍈', '🍎', '🍉', '🍍'];
 
 frutas.concat(fruits); // ['Melón', 'Manzana', 'Sandía', 'Piña', '🍈', '🍎', '🍉', '🍍']
 ```
@@ -79,53 +79,61 @@ frutas.concat(fruits); // ['Melón', 'Manzana', 'Sandía', 'Piña', '🍈', '�
 Añade uno o más elementos al final del Array. Devolviendo la nueva longitud del Array.
 
 ```js
-const colores = ["Amarillo", "Magenta", "Azul"];
-colores.push("Rosado", "Rojo"); // 5
+const colores = ['Amarillo', 'Magenta', 'Azul'];
+colores.push('Rosado', 'Rojo'); // 5
 ```
 
 ### `.pop()`
 
+`[mutable]`
+
 Elimina el último elemento del Array. Devolviendo el elemento que eliminó.
 
 ```js
-const colores = ["Amarillo", "Magenta", "Azul"];
+const colores = ['Amarillo', 'Magenta', 'Azul'];
 colores.pop(); // Azul
 ```
 
 ### `.shift()`
 
+`[mutable]`
+
 Elimina el primer elemento del Array. Devolviendo el elemento que eliminó.
 
 ```js
 const dias = [
-  "Lunes",
-  "Martes",
-  "Miércoles",
-  "Jueves",
-  "Viernes",
-  "Sábado",
-  "Domingo",
+  'Lunes',
+  'Martes',
+  'Miércoles',
+  'Jueves',
+  'Viernes',
+  'Sábado',
+  'Domingo',
 ];
 dias.shift(); // Lunes
 ```
 
 ### `.unshift()`
 
+`[mutable]`
+
 Agrega uno o más elementos al inicio del Array. Devolviendo la nueva longitud del Array.
 
 ```js
-const meses = ["Marzo", "Abril", "Mayo"];
-meses.unshift("Enero", "Febrero"); // 5
+const meses = ['Marzo', 'Abril', 'Mayo'];
+meses.unshift('Enero', 'Febrero'); // 5
 ```
 
 ### `.splice()`
+
+`[mutable]`
 
 Cambia el contenido de un Array eliminando (o no) elementos existentes y/o agregando nuevos elementos.
 **Caso #1:**
 
 ```js
-const personas = ["P1", "P2", "P3", "P4", "P5"];
-personas.splice(1, 2, "P2-B", "P3-B"); // ['P1', 'P2-B', 'P3-B', 'P4', 'P5']
+const personas = ['P1', 'P2', 'P3', 'P4', 'P5'];
+personas.splice(1, 2, 'P2-B', 'P3-B'); // ['P1', 'P2-B', 'P3-B', 'P4', 'P5']
 ```
 
 - Se entiende como: <br>
@@ -145,14 +153,14 @@ personas.splice(1, 2, "P2-B", "P3-B"); // ['P1', 'P2-B', 'P3-B', 'P4', 'P5']
   por 'P2-B' y 'P3-B'
 
   ```js
-  personas.splice(1, 2, "P2-B", "P3-B"); // ['P1', 'P2-B', 'P3-B', 'P4', 'P5']
+  personas.splice(1, 2, 'P2-B', 'P3-B'); // ['P1', 'P2-B', 'P3-B', 'P4', 'P5']
   ```
 
 **Caso #2:**
 
 ```js
-const personas = ["P1", "P2", "P3", "P4", "P5"];
-personas.splice(3, 0, "P-KLJ", "P-XIY"); // ['P1', 'P2', 'P3', 'P-KLJ', 'P-XIY', 'P4', 'P5']
+const personas = ['P1', 'P2', 'P3', 'P4', 'P5'];
+personas.splice(3, 0, 'P-KLJ', 'P-XIY'); // ['P1', 'P2', 'P3', 'P-KLJ', 'P-XIY', 'P4', 'P5']
 ```
 
 - Se entiende como: <br>
@@ -172,13 +180,15 @@ personas.splice(3, 0, "P-KLJ", "P-XIY"); // ['P1', 'P2', 'P3', 'P-KLJ', 'P-XIY',
   entonces añadiría `P-KLJ` y `P-XIY`
 
   ```js
-  personas.splice(3, 0, "P-KLJ", "P-XIY"); // ['P1', 'P2', 'P3', 'P-KLJ', 'P-XIY', 'P4', 'P5']
+  personas.splice(3, 0, 'P-KLJ', 'P-XIY'); // ['P1', 'P2', 'P3', 'P-KLJ', 'P-XIY', 'P4', 'P5']
   ```
 
 Método `.slice()`: Devuelve una copia de una parte del Array dentro de un nuevo Array empezando por inicio hasta fin (fin no incluido). _El array original no se modificará._
 
+`[inmutable]`
+
 ```js
-const letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+const letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 //  0,   1,   2,   3,   4,   5,   6,   7,   8  <= Posiciones/índice de los elementos dentro del Array
 
 // Si no especificamos el final
@@ -212,15 +222,20 @@ array.find((element) => element > 1); // 3
 array.find((element) => element > 4 && element < 7); // 5
 ```
 
+<!--
+ESTO NO ES UN MÉTODO FUNCIONAL DE ARRAY -> String
+
 Método `.split()`: Se utiliza para dividir una cadena de texto en un array de cadenas mediante la separación de la cadena en subcadenas. Se puede especificar un separador y un límite opcional para controlar el número de divisiones a realizar. Si se omite el separador, el array devuelto contendrá un solo elemento con la cadena completa.
 
 ```js
-const string = "Esto es una cadena de texto";
+const string = 'Esto es una cadena de texto';
 string.split(); // [ 'Esto es una cadena de texto' ]
-string.split(""); // [ 'E', 's', 't', 'o', ' ', 'e', 's', ' ', 'u', 'n', 'a', ' ', 'c', 'a', 'd', 'e', 'n', 'a', ' ', 'd', 'e', ' ', 't', 'e', 'x', 't', 'o' ]
-string.split(" "); // [ 'Esto', 'es', 'una', 'cadena', 'de', 'texto' ]
-string.split("", 4); // [ 'E', 's', 't', 'o' ]
+string.split(''); // [ 'E', 's', 't', 'o', ' ', 'e', 's', ' ', 'u', 'n', 'a', ' ', 'c', 'a', 'd', 'e', 'n', 'a', ' ', 'd', 'e', ' ', 't', 'e', 'x', 't', 'o' ]
+string.split(' '); // [ 'Esto', 'es', 'una', 'cadena', 'de', 'texto' ]
+string.split('', 4); // [ 'E', 's', 't', 'o' ]
 ```
+
+-->
 
 Método `.map()`: Retorna un nuevo Array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
 
@@ -233,7 +248,7 @@ numeros.map((numero) => {
 ```
 
 <!--
-ESTO NO ES UN MÉTODO FUNCIONAL DE ARRAY
+ESTO NO ES UN MÉTODO FUNCIONAL DE ARRAY -> Number
 Método `toFixed()`: En principio, convierte el número a una cadena de texto. Además, si carece de argumento; redondea al número más cercano. En caso contrario, formatea el número a la cantidad específica de dígitos después del punto decimal.
 
 ```js
